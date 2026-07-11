@@ -38,6 +38,16 @@ def create_app() -> FastAPI:
     app.include_router(reviews.router)
     app.include_router(wishlist.router)
 
+    @app.get("/", tags=["health"])
+    def api_index() -> dict[str, str]:
+        return {
+            "name": settings.app_name,
+            "status": "ok",
+            "health": "/health",
+            "documentation": "/docs",
+            "openapi": "/openapi.json",
+        }
+
     @app.get("/health", tags=["health"])
     def health_check() -> dict[str, str]:
         return {"status": "ok"}

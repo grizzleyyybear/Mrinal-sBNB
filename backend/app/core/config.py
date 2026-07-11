@@ -9,7 +9,7 @@ DEFAULT_DATABASE_URL = "sqlite:////tmp/airbnb_clone.db" if os.getenv("VERCEL") e
 
 @dataclass(frozen=True)
 class Settings:
-    app_name: str = "Airbnb Clone API"
+    app_name: str = "Mrinal-sBNB API"
     database_url: str = os.getenv("DATABASE_URL", DEFAULT_DATABASE_URL)
     frontend_origins: tuple[str, ...] = tuple(
         origin.strip()
