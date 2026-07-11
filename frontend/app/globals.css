@@ -1,0 +1,149 @@
+@import "react-day-picker/dist/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #222222;
+  background: #ffffff;
+  --page-gutter: clamp(20px, 4vw, 48px);
+  --motion-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: clip;
+  background: #ffffff;
+  color: #222222;
+  font-family: "Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+input,
+select {
+  transition-timing-function: var(--motion-standard);
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 2px solid #ff385c;
+  outline-offset: 3px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.airbnb-page {
+  width: 100%;
+  min-width: 0;
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+
+.airbnb-page--detail {
+  max-width: 1224px;
+}
+
+.airbnb-page--discovery {
+  max-width: 1774px;
+}
+
+.airbnb-page--wide {
+  max-width: 1536px;
+}
+
+.airbnb-page--host {
+  max-width: 1376px;
+}
+
+@media (max-width: 639px) {
+  :root {
+    --page-gutter: 16px;
+  }
+}
+
+.airbnb-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #dddddd transparent;
+}
+
+.airbnb-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.airbnb-scrollbar::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 9999px;
+}
+
+.airbnb-hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.airbnb-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.airbnb-surface-enter {
+  animation: airbnb-surface-enter 260ms var(--motion-emphasized) both;
+}
+
+@keyframes airbnb-surface-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.rdp {
+  --rdp-accent-color: #222222;
+  --rdp-accent-background-color: #f7f7f7;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

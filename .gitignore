@@ -1,0 +1,10 @@
+backend/airbnb_clone.db
+backend/server.log
+backend/server.err
+frontend/node_modules/
+frontend/.next/
+frontend/server.log
+frontend/server.err
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
