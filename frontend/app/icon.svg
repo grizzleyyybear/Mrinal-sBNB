@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mrinal-sBNB">
+  <rect width="64" height="64" rx="14" fill="#ff385c"/>
+  <path d="M16 29.5 32 16l16 13.5v18A4.5 4.5 0 0 1 43.5 52h-23A4.5 4.5 0 0 1 16 47.5v-18Z" fill="#fff"/>
+  <path d="M27 52V37h10v15" fill="#ff385c"/>
+  <path d="M22.5 31.5h19" stroke="#ff385c" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -8,3 +8,4 @@ frontend/server.err
 *.tsbuildinfo
 __pycache__/
 *.py[cod]
+SUBMISSION_NOTES_PRIVATE.md

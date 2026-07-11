@@ -4,8 +4,8 @@ import { Providers } from "./providers";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Airbnb Clone",
-  description: "A fullstack Airbnb clone assignment built with Next.js and FastAPI."
+  title: "Mrinal-sBNB",
+  description: "A full-stack stay discovery and booking application built with Next.js and FastAPI."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
